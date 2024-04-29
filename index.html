@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Marmeto</title>
+
+</head>
+
+<body>
+    <!-- Your code goes here -->
+    <div class="container">
+        <div class="product">
+            <!-- Gallery -->
+            <div class="gallery">
+                <img src="./assets/productimage1.png" alt="" id="mainGalleryImage">
+                <div class="smallgallery">
+                    <img src="./assets/productimage2.png" alt="" onclick="changeMainImage(this)">
+                    <img src="./assets/productimage3.png" alt="" onclick="changeMainImage(this)">
+                    <img src="./assets/productimage4.png" alt="" onclick="changeMainImage(this)">
+                    <img src="./assets/productimage2.png" alt="" onclick="changeMainImage(this)">
+                </div>
+            </div>
+            <!-- Details -->
+            <div class="details">
+                <!-- Heading -->
+                <p>Marmeto</p>
+                <h1>Embrace Sideboard</h1>
+                <hr>
+                <!-- Price -->
+                <div class="price">
+                    <span class="amount" id="amount"></span>
+                    <span class="discount"></span>
+                </div>
+                <div class="prevprice"><s id="prevprice"></s></div>
+                <hr>
+
+                <!-- Colors -->
+                <p>Choose a Color</p>
+                <div class="colorpicker" id="colorPicker">
+                    <!-- Now Color Data is fetched from the API 
+                        <div class="color yellow active" onclick="selectColor(this)"></div>
+                        <div class="color green" onclick="selectColor(this)"></div>
+                        <div class="color blue" onclick="selectColor(this)"></div>
+                        <div class="color pink" onclick="selectColor(this)"></div>
+                     -->
+                </div>
+                <hr>
+
+                <!-- Sizes -->
+                <p>Choose a Size</p>
+                <div class="sizes">
+                    <!-- Sizes data is now fetched from the API
+                        <label for="small" class="selected">
+                            <input type="radio" name="size" id="small" onclick="selectSize('Small')" checked>
+                            <span>Small</span>
+                        </label>
+                        <label for="medium">
+                            <input type="radio" name="size" id="medium" onclick="selectSize('Medium')">
+                            <span>Medium</span>
+                        </label>
+                        <label for="large">
+                            <input type="radio" name="size" id="large" onclick="selectSize('Large')"
+                                onclick="selectSize('Large')">
+                            <span>Large</span>
+                        </label>
+                        <label for="extralarge">
+                            <input type="radio" name="size" id="extralarge" onclick="selectSize('ExtraLarge')">
+                            <span>Extra Large</span>
+                        </label>
+                        <label for="xxl">
+                            <input type="radio" name="size" id="xxl" onclick="selectSize('XXL')">
+                            <span>XXL</span>
+                        </label> -->
+                </div>
+
+                <!-- Cart button -->
+                <div class="cart">
+                    <div class="counter">
+                        <button class="button" onclick="decrement()">-</button>
+                        <div class="number" id="counter">1</div>
+                        <button class="button" onclick="increment()">+</button>
+                    </div>
+                    <div class="add-to-cart">
+                        <button class="cart-button" onclick="addToCart()">
+                            <span class="cart-icon"><img src="./assets/addtocart.png" alt=""></span> Add to Cart
+                        </button>
+                    </div>
+                </div>
+                <div id="cartDetails"></div>
+                <hr>
+
+                <!-- Description -->
+                <div class="desc">
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Happy coding 😊 -->
+    <script src="./script.js"></script>
+</body>
+
+</html>
