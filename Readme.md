@@ -12,7 +12,7 @@ To run the project locally, follow these steps:
 
 ```bash
 # Clone the repository
-git clone https://github.com/constgenius/Marmeto
+git clone https://github.com/nikkikunte/marmetoassessment
 
 # Navigate to the project directory
 cd Marmeto
